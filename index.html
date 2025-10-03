@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>LUVSKII</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 10px #ff8fab, 0 0 20px #ff8fab, 0 0 40px #ff4d6d;
+      animation: glow 2s infinite alternate;
+      margin-bottom: 40px;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff8fab, 0 0 20px #ff8fab, 0 0 40px #ff4d6d; }
+      to { text-shadow: 0 0 20px #fff, 0 0 40px #ff8fab, 0 0 60px #ff4d6d; }
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      border: 5px solid #fff;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1s forwards;
+    }
+
+    .gallery img:nth-child(1) { animation-delay: 0.3s; }
+    .gallery img:nth-child(2) { animation-delay: 0.6s; }
+    .gallery img:nth-child(3) { animation-delay: 0.9s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>LUVSKII</h1>
+  <div class="gallery">
+    <img src="37B54CB0-6604-472F-BE75-6C2789F3329E.jpeg" alt="Фото 1">
+    <img src="photo_1.jpg" alt="Фото 2">
+    <img src="CA12B2C7-B3E0-4428-AE0A-227D767FE8D9.jpeg" alt="Фото 3">
+    <img src="photo_2.jpg" alt="Фото 4">
+    <img src="photo_3.jpg" alt="Фото 5">
+    <img src="photo_4.jpg" alt="Фото 6">
+    <img src="photo_5.jpg" alt="Фото 7">
+    <img src="photo_6.jpg" alt="Фото 8">
+    <img src="photo_7.jpg" alt="Фото 9">
+    <img src="photo_9.jpg" alt="Фото 10">
+    <img src="photo_10.jpg" alt="Фото 11">
+    <img src="photo_11.jpg" alt="Фото 12">
+    <img src="photo_12.jpg" alt="Фото 13">
+    <img src="photo_13.jpg" alt="Фото 14">
+    <img src="photo_14.jpg" alt="Фото 15">
+  </div>
+</body>
+</html>
